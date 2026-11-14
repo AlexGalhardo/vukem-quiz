@@ -46,6 +46,6 @@ jobs:
             found { print }
           ' CHANGELOG.md > release-notes.md
           test -s release-notes.md || echo "See CHANGELOG.md" > release-notes.md
-      - uses: softprops/action-gh-release@v3.0.3
+      - uses: softprops/action-gh-release@v3.0.4
         with:
           body_path: release-notes.md
